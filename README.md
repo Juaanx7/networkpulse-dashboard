@@ -9,7 +9,7 @@ This project was created as part of my **Frontend / Full Stack developer portfol
 
 ## Live Demo
 
-(Deploy link will be added here)
+https://networkpulse-dashboard.onrender.com
 
 ---
 
