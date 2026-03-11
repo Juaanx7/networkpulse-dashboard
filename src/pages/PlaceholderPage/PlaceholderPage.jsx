@@ -1,4 +1,4 @@
-import "./PlaceholderPage.scss";
+import "./PlaceHolderPage.scss";
 
 function PlaceholderPage({ title }) {
   return (
