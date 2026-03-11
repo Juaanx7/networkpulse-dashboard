@@ -1,16 +1,34 @@
-# React + Vite
+# NetworkPulse Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern network monitoring dashboard built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
+- Sidebar navigation
+- Dashboard metrics
+- Traffic analytics chart
+- Device distribution chart
+- Clients management table
+- Search and filter functionality
+- Responsive admin layout
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React
+- Vite
+- SCSS
+- Recharts
+- React Router
+- React Icons
 
-## React Compiler
+## Pages
+- Dashboard
+- Clients
+- Network (placeholder)
+- Traffic (placeholder)
+- Tickets (placeholder)
+- Settings (placeholder)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Purpose
+This project was created as part of my frontend/full stack portfolio to showcase dashboard UI development and data visualization.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Author
+Juan Acosta Quiñones
