@@ -1,17 +1,22 @@
 .dashboard {
   display: grid;
   gap: 28px;
+  width: 100%;
+  min-width: 0;
 
   &__metrics {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    min-width: 0;
   }
 
   &__widgets {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     gap: 20px;
+    align-items: stretch;
+    min-width: 0;
   }
 
   &__panel {
@@ -19,6 +24,10 @@
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 24px;
     padding: 24px;
+
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
 
     &--chart {
       min-height: 420px;
@@ -31,6 +40,7 @@
     justify-content: space-between;
     gap: 1rem;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 
     h2 {
       font-size: 1.65rem;
@@ -48,24 +58,6 @@
     }
   }
 
-  &__panel--chart {
-    min-height: 420px;
-  }
-
-  &__panel {
-    background: #1e293b;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 24px;
-    padding: 24px;
-  }
-
-  &__widgets {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-    gap: 20px;
-    align-items: stretch;
-  }
-
   &__nodes {
     display: grid;
     gap: 18px;
@@ -76,6 +68,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    min-width: 0;
 
     strong {
       display: block;
@@ -93,6 +86,7 @@
     align-items: center;
     gap: 10px;
     text-align: right;
+    flex-shrink: 0;
   }
 
   &__dot {
@@ -172,6 +166,8 @@
   }
 }
 
+/* ---------- Tablet ---------- */
+
 @media (max-width: 1200px) {
   .dashboard {
     &__metrics {
@@ -184,21 +180,20 @@
   }
 }
 
-@media (max-width: 700px) {
-  .dashboard {
-    &__metrics {
-      grid-template-columns: 1fr;
-    }
-  }
-}
+/* ---------- Mobile ---------- */
 
 @media (max-width: 700px) {
   .dashboard {
     gap: 20px;
 
+    &__metrics {
+      grid-template-columns: 1fr;
+    }
+
     &__panel {
       padding: 18px;
       border-radius: 20px;
+      width: 100%;
     }
 
     &__panel-header {
